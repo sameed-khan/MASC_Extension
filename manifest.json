@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "TextBook Search",
+    "name": "Research Translater",
     "version": "1.0.0",
-    "description": "find the cheapest textbooks on the web",
+    "description": "Research without the big fancy words",
 
     "browser_action": {
         "default_popup": "popup.html"
@@ -10,14 +10,13 @@
     "permissions": [
         "tabs",
         "storage",
-        "https://*.bncollege.com/webapp/wcs/stores/servlet/OrderItemDisplayMC?*",
         "https://*/"
     ],
 
     "content_scripts": [
         {
-            "matches": ["https://*.bncollege.com/webapp/wcs/stores/servlet/OrderItemDisplayMC?*"],
-            "js": ["getISBN.js"]
+            "matches": ["https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/*"],
+            "js": ["testreplace.js"]
         }
     ],
 
