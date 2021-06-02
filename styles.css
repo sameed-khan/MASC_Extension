@@ -1,0 +1,10 @@
+.search{
+    padding: 5% 5%;
+    text-align: center;
+}
+input.search{
+    width: 80%;
+}
+#btn{
+    background-color: aquamarine;
+}

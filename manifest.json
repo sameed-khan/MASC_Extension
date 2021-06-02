@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "TextBook Search",
+    "version": "1.0.0",
+    "description": "find the cheapest textbooks on the web",
+
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs",
+        "storage",
+        "https://*.bncollege.com/webapp/wcs/stores/servlet/OrderItemDisplayMC?*",
+        "https://*/"
+    ],
+
+    "content_scripts": [
+        {
+            "matches": ["https://*.bncollege.com/webapp/wcs/stores/servlet/OrderItemDisplayMC?*"],
+            "js": ["getISBN.js"]
+        }
+    ],
+
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    }
+}
