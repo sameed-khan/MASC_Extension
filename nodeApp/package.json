@@ -1,0 +1,15 @@
+{
+  "name": "mascwebapp",
+  "version": "1.0.0",
+  "description": "Google App Engine hosted web application that will handle requests for GSheet information from the Chrome browser extension component of the MASC Application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Sameed Khan, Sa'ad Movania",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "g-sheets-api": "^1.4.1"
+  }
+}

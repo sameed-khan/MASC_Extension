@@ -10,18 +10,21 @@
     "permissions": [
         "tabs",
         "storage",
-        "https://*/"
+        "https://*/",
+        "https://docs.google.com/spreadsheets/",
+        "https://sheets.googleapis.com/*"
     ],
 
     "content_scripts": [
         {
-            "matches": ["https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/*"],
+            "matches": ["https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/*",
+            "https://ncbi.nlm.nih.gov/pmc/articles/PMC*"],
             "js": ["testreplace.js"]
         }
     ],
 
     "background": {
         "scripts": ["background.js"],
-        "persistent": false
+        "persistent": true
     }
 }
