@@ -1,30 +1,26 @@
 {
-    "manifest_version": 2,
     "name": "Research Translater",
     "version": "1.0.0",
+    "manifest_version": 3,
     "description": "Research without the big fancy words",
 
-    "browser_action": {
+    "action": {
         "default_popup": "popup.html"
     },
     "permissions": [
         "tabs",
+        "activeTab",
         "storage",
-        "https://*/",
-        "https://docs.google.com/spreadsheets/",
-        "https://sheets.googleapis.com/*"
+        "scripting",
+        "webNavigation"       
     ],
 
-    "content_scripts": [
-        {
-            "matches": ["https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/*",
-            "https://ncbi.nlm.nih.gov/pmc/articles/PMC*"],
-            "js": ["testreplace.js"]
-        }
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
     ],
 
     "background": {
-        "scripts": ["background.js"],
-        "persistent": true
+        "service_worker":"background.js"
     }
 }

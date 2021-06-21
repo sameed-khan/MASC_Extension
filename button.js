@@ -11,6 +11,6 @@ triggerButton.addEventListener("click", async() => {
 
     chrome.scripting.executeScript({
         target: { tabId: tab.id }, 
-        files: ['testreplace.js']
+        files: ['article_content.js']
     });
 });

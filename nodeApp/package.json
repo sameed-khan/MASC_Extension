@@ -9,6 +9,7 @@
   "author": "Sameed Khan, Sa'ad Movania",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "g-sheets-api": "^1.4.1"
   }
