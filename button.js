@@ -1,6 +1,6 @@
 /*
-When popup button is pressed, run content script testreplace.js
-testreplace.js will handle transmission of PMCID to Node App and then
+When popup button is pressed, run content script article_content.js
+article_content.js will handle transmission of PMCID to Node App and then
 inject relevant HTML into the webpage
 **/
 
