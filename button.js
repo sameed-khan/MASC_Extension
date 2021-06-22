@@ -7,10 +7,11 @@ inject relevant HTML into the webpage
 let triggerButton = document.getElementById("btn");
 
 triggerButton.addEventListener("click", async() => {
-    let [tab] = await chrome.tabs.query({ active: true, currentWindow: true});
+    console.log("The button was clicked again!");
+    let tab = await chrome.tabs.query({active: true, currentWindow: true});
 
     chrome.scripting.executeScript({
-        target: { tabId: tab.id }, 
+        target: { tabId: tab[0].id }, 
         files: ['article_content.js']
     });
 });
