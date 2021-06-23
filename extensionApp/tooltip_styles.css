@@ -1,0 +1,32 @@
+.special_term {
+    position: relative;
+}
+
+.term_tooltip {
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    left: 110%;
+    width: 20vw;
+    height: auto;
+    overflow: hidden;
+    z-index: 999999;
+
+    border: 3px solid #3e72a6;
+    background-color: #fff;
+    color: #303030;
+    padding: 1em;
+    margin-bottom: 5em;
+    text-align: left;
+    font-size: 14px;
+    border-radius: 6px;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+
+.special_term:hover .term_tooltip {
+    visibility: visible;
+    opacity: 1;
+}

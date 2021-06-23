@@ -1,4 +1,8 @@
+// Allows for tooltips to overflow the main article content by changing CSS style
+// Loops through each JSON-linked paragraph element and replaces it with new HTML
 function replaceText(htmlJSON){
+    document.querySelector("#maincontent").style.overflow = "visible";
+
     for (let i=0; i < htmlJSON.length; i++) {
         let temp = htmlJSON[i];
         document.querySelector("#"+temp.PARAGRAPH_ID).innerHTML = temp.REPLACE_HTML;

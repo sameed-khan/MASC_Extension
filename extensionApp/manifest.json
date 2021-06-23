@@ -15,6 +15,14 @@
         "webNavigation"       
     ],
 
+    "content_scripts": [
+        {
+            "matches": ["https://www.ncbi.nlm.nih.gov/pmc/articles/*",
+                        "http://wwww.ncbi.nlm.nih.gov/pmc/articles/*"],
+            "css": ["tooltip_styles.css"]
+        }
+    ],
+
     "host_permissions": [
         "http://*/*",
         "https://*/*"
