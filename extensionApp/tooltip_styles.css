@@ -52,7 +52,8 @@
 .img_bullet {
   align-self: center;
   justify-self: center;
-  content: url("chrome-extension://__MSG@@extension_id__/img/corona_icon.svg");
+/*  content: url('chrome-extension://__MSG_@@extension_id__/img/corona_icon.svg');*/
+  content:url('chrome-extension://okhojagicknooojnhcaphffegmhaiecp/img/corona_icon.svg');
 }
 .ref_link {
   justify-self: start;
