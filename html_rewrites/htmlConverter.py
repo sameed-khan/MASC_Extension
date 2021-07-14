@@ -17,7 +17,7 @@ Formatting problems that break everything:
     - Also can't use more than one paragraph since the text insertion doesn't account for line breaks in the text.
 
 Usage (in bash):
->> python ptext_html_processor.py {CSV-file-path} {TXT-file-path} > {NEW-file-path}.html
+>> python htmlConverter.py {CSV-file-path} {TXT-file-path} > {NEW-file-path}.html
 """
 
 from sys import argv as arg
@@ -28,7 +28,7 @@ import re
 csv_path = arg[1]
 txt_path = arg[2]
 csv_list = []
-HTML_REF_LINK = '<img class="img_bullet"><a href="__LINK" class="ref_link">__TEXT</a>'
+HTML_REF_LINK = '<img class="img_bullet"><a href="__LINK" class="ref_link" target="_blank">__TEXT</a>'
 HTML_TT = ['<span class="special_term">WORD_HERE', '<span class="term_tooltip">TT_CONTENT',
            '<span class="borderline">&nbsp;', '<span class="reference_grid">', '</span></span></span></span>']
 
