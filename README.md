@@ -14,3 +14,4 @@ An article extension designed to increase public COVID science literacy by rewri
 # Contributions
 We are currently seeking article rewriters and rewrite designers. Ideal contributors should either have a background in biological research (article rewriter) or basic HTML and CSS design (rewrite designers).  
 Interested contributors can email sameedgkhan@gmail.com
+Simple edit added here hiii
